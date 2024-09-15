@@ -4,12 +4,12 @@
 ### Clone the repository:
 The project is hosted on GitHub, clone the repository:
 ```bash
-git clone https://github.com/your-username/client_settings_app.git
+git clone https://github.com/Nades-Brigade/Tasks_app_LiveView.git
 ```
 
 ### Navigate to the project directory:
 ```bash
-cd client_settings_app
+cd Tasks_app_LiveView
 ```
 
 ---
