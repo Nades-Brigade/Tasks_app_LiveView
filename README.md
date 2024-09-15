@@ -1,5 +1,5 @@
 # Install and Run ClientSettings (Not LiveView)
-## 1. Clone the Project from GitHub (or Transfer the Files)
+## 1. Clone the Project from GitHub (or Zip the Files)
 
 ### Clone the repository:
 The project is hosted on GitHub, clone the repository:
