@@ -1,4 +1,4 @@
-# Install and Run ClientSettings (Not LiveView)
+# Install and Run LiveViewTasks App
 ## 1. Clone the Project from GitHub (or Zip the Files)
 
 ### Clone the repository:
