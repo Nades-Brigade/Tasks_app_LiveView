@@ -74,21 +74,29 @@ Visit `http://localhost:4000/` in your browser to access the app.
 ## 1. Install Dependencies
 
 ### Install Phoenix dependencies (if not done so already):
-Run the following command to install all necessary for the "Non-Live View":
+Run the following command to install all necessary packages for the application:
 ```bash
 mix deps.get
 ```
 
 ---
-## 2. Navigate to /doc directory
+## 2. Create docs
 
-Once dependencies are, navigate into the /doc folder:
+Once dependencies are completed, create the docs using ex_doc:
+```bash
+mix docs
+```
+
+---
+## 3. Navigate to /doc directory
+
+Once dependencies are done, navigate into the /doc folder:
 ```bash
 cd doc
 ```
 
 ---
-## 3. Open the documentation
+## 4. Open the documentation
 
 Open documentation by running the following:
 ```bash
