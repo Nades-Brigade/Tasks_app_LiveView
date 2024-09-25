@@ -1,6 +1,5 @@
 {application,esbuild,
-             [{config_mtime,1726399662},
-              {optional_applications,[inets,ssl]},
+             [{optional_applications,[inets,ssl]},
               {applications,[kernel,stdlib,elixir,logger,inets,ssl,castore,
                              jason]},
               {description,"Mix tasks for installing and invoking esbuild"},

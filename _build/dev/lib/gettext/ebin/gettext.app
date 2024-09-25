@@ -1,6 +1,5 @@
 {application,gettext,
-             [{config_mtime,1726399662},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir,logger,expo]},
               {description,"Internationalization and localization through gettext"},
               {modules,['Elixir.Gettext','Elixir.Gettext.Application',

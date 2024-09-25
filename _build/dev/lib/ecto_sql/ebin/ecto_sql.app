@@ -1,6 +1,5 @@
 {application,ecto_sql,
-             [{config_mtime,1726399662},
-              {optional_applications,[postgrex,myxql,tds]},
+             [{optional_applications,[postgrex,myxql,tds]},
               {applications,[kernel,stdlib,elixir,logger,eex,ecto,telemetry,
                              db_connection,postgrex,myxql,tds]},
               {description,"SQL-based adapters for Ecto and database migrations"},

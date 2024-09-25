@@ -1,6 +1,5 @@
 {application,websock_adapter,
-             [{config_mtime,1726399662},
-              {optional_applications,[bandit,plug_cowboy]},
+             [{optional_applications,[bandit,plug_cowboy]},
               {applications,[kernel,stdlib,elixir,websock,plug,bandit,
                              plug_cowboy]},
               {description,"A set of WebSock adapters for common web servers"},

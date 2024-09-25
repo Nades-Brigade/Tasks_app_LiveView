@@ -1,6 +1,5 @@
 {application,telemetry_metrics,
-             [{config_mtime,1726399662},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir,logger,telemetry]},
               {description,"Provides a common interface for defining metrics based on Telemetry events.\n"},
               {modules,['Elixir.Telemetry.Metrics',

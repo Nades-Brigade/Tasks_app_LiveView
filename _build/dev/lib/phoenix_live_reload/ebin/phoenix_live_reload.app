@@ -1,6 +1,5 @@
 {application,phoenix_live_reload,
-             [{config_mtime,1726399662},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir,logger,phoenix,file_system]},
               {description,"Provides live-reload functionality for Phoenix"},
               {modules,['Elixir.Phoenix.LiveReloader',

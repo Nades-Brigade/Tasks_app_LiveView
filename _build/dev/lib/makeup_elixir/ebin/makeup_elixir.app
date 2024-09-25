@@ -1,6 +1,5 @@
 {application,makeup_elixir,
-             [{config_mtime,1726399993},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir,makeup,nimble_parsec]},
               {description,"Elixir lexer for the Makeup syntax highlighter.\n"},
               {modules,['Elixir.Makeup.Lexers.ElixirLexer',

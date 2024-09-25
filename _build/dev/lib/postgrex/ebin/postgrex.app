@@ -1,6 +1,5 @@
 {application,postgrex,
-             [{config_mtime,1726399662},
-              {optional_applications,[jason,table]},
+             [{optional_applications,[jason,table]},
               {applications,[kernel,stdlib,elixir,logger,crypto,ssl,jason,
                              table,decimal,db_connection]},
               {description,"PostgreSQL driver for Elixir"},

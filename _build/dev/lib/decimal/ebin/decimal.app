@@ -1,6 +1,5 @@
 {application,decimal,
-             [{config_mtime,1726399662},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir]},
               {description,"Arbitrary precision decimal arithmetic."},
               {modules,['Elixir.Decimal','Elixir.Decimal.Context',

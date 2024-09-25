@@ -1,6 +1,5 @@
 {application,ecto,
-             [{config_mtime,1726399662},
-              {optional_applications,[jason]},
+             [{optional_applications,[jason]},
               {applications,[kernel,stdlib,elixir,logger,crypto,eex,telemetry,
                              decimal,jason]},
               {description,"A toolkit for data mapping and language integrated query for Elixir"},

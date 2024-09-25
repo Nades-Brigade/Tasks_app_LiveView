@@ -1,0 +1,29 @@
+<.header>
+  Client setting <%= @client_setting.id %>
+  <:subtitle>This is a client_setting record from your database.</:subtitle>
+  <:actions>
+    <.link patch={~p"/client_settings/#{@client_setting}/show/edit"} phx-click={JS.push_focus()}>
+      <.button>Edit client_setting</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Time offset"><%= @client_setting.time_offset %></:item>
+  <:item title="Bulk"><%= @client_setting.bulk %></:item>
+  <:item title="Supplier"><%= @client_setting.supplier %></:item>
+  <:item title="Start Date"><%= @client_setting.start_date %></:item>
+</.list>
+
+<.back navigate={~p"/client_settings"}>Back to client_settings</.back>
+
+<.modal :if={@live_action == :edit} id="client_setting-modal" show on_cancel={JS.patch(~p"/client_settings/#{@client_setting}")}>
+  <.live_component
+    module={LiveviewTasksAppWeb.ClientSettingLive.FormComponent}
+    id={@client_setting.id}
+    title={@page_title}
+    action={@live_action}
+    client_setting={@client_setting}
+    patch={~p"/client_settings/#{@client_setting}"}
+  />
+</.modal>

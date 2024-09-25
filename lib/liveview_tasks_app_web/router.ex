@@ -17,11 +17,20 @@ defmodule LiveviewTasksAppWeb.Router do
   scope "/", LiveviewTasksAppWeb do
     pipe_through :browser
 
-    live "/", TaskLive.Index, :index
+    # Landing page
+    get "/", PageController, :home
+
+    # Task routes
     live "/tasks", TaskLive.Index, :index
     live "/tasks/new", TaskLive.Index, :new
     live "/tasks/:id/edit", TaskLive.Index, :edit
     live "/tasks/:id", TaskLive.Show, :show
+
+    # ClientSetting routes
+    live "/client_settings", ClientSettingLive.Index, :index
+    live "/client_settings/new", ClientSettingLive.Index, :new
+    live "/client_settings/:id/edit", ClientSettingLive.Index, :edit
+    live "/client_settings/:id", ClientSettingLive.Show, :show
   end
 
   # Other scopes may use custom stacks.

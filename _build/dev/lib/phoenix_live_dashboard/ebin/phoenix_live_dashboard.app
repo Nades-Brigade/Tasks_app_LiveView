@@ -1,6 +1,5 @@
 {application,phoenix_live_dashboard,
-             [{config_mtime,1726399662},
-              {optional_applications,[ecto_psql_extras,ecto_mysql_extras,
+             [{optional_applications,[ecto_psql_extras,ecto_mysql_extras,
                                       ecto_sqlite3_extras,ecto]},
               {applications,[kernel,stdlib,elixir,logger,mime,
                              phoenix_live_view,telemetry_metrics,

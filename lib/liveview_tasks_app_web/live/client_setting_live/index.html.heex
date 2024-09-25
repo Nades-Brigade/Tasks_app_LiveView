@@ -1,0 +1,45 @@
+<.header>
+  Listing Client settings
+  <:actions>
+    <.link patch={~p"/client_settings/new"}>
+      <.button>New Client setting</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table
+  id="client_settings"
+  rows={@streams.client_settings}
+  row_click={fn {_id, client_setting} -> JS.navigate(~p"/client_settings/#{client_setting}") end}
+>
+  <:col :let={{_id, client_setting}} label="Time offset"><%= client_setting.time_offset %></:col>
+  <:col :let={{_id, client_setting}} label="Bulk"><%= client_setting.bulk %></:col>
+  <:col :let={{_id, client_setting}} label="Supplier"><%= client_setting.supplier %></:col>
+  <:col :let={{_id, client_setting}} label="Start Date"><%= client_setting.start_date %></:col>
+
+  <:action :let={{_id, client_setting}}>
+    <div class="sr-only">
+      <.link navigate={~p"/client_settings/#{client_setting}"}>Show</.link>
+    </div>
+    <.link patch={~p"/client_settings/#{client_setting}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={{id, client_setting}}>
+    <.link
+      phx-click={JS.push("delete", value: %{id: client_setting.id}) |> hide("##{id}")}
+      data-confirm="Are you sure?"
+    >
+      Delete
+    </.link>
+  </:action>
+</.table>
+
+<.modal :if={@live_action in [:new, :edit]} id="client_setting-modal" show on_cancel={JS.patch(~p"/client_settings")}>
+  <.live_component
+    module={LiveviewTasksAppWeb.ClientSettingLive.FormComponent}
+    id={@client_setting.id || :new}
+    title={@page_title}
+    action={@live_action}
+    client_setting={@client_setting}
+    patch={~p"/client_settings"}
+  />
+</.modal>

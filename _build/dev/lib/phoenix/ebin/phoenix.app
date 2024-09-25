@@ -1,6 +1,5 @@
 {application,phoenix,
-             [{config_mtime,1726399662},
-              {optional_applications,[phoenix_view,plug_cowboy,jason]},
+             [{optional_applications,[phoenix_view,plug_cowboy,jason]},
               {applications,[kernel,stdlib,elixir,logger,eex,crypto,
                              public_key,plug,plug_crypto,telemetry,
                              phoenix_pubsub,phoenix_template,websock_adapter,

@@ -1,6 +1,5 @@
 {application,phoenix_live_view,
-    [{config_mtime,1726399662},
-     {compile_env,
+    [{compile_env,
          [{phoenix_live_view,[enable_expensive_runtime_checks],{ok,true}}]},
      {optional_applications,[phoenix_view,jason,floki]},
      {applications,

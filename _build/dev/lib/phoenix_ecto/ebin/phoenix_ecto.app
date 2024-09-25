@@ -1,6 +1,5 @@
 {application,phoenix_ecto,
-             [{config_mtime,1726399662},
-              {optional_applications,[phoenix_html,postgrex]},
+             [{optional_applications,[phoenix_html,postgrex]},
               {applications,[kernel,stdlib,elixir,logger,phoenix_html,ecto,
                              plug,postgrex]},
               {description,"Integration between Phoenix & Ecto"},

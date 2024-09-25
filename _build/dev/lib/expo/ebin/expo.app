@@ -1,6 +1,5 @@
 {application,expo,
-             [{config_mtime,1726399662},
-              {optional_applications,[]},
+             [{optional_applications,[]},
               {applications,[kernel,stdlib,elixir]},
               {description,"Low-level Gettext file handling (.po/.pot/.mo file writer and parser)."},
               {modules,['Elixir.Expo.MO','Elixir.Expo.MO.Composer',
